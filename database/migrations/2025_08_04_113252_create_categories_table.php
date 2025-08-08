@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
+            $table->string('name'); // Naziv kategorije
+            $table->text('description')->nullable(); // Opis kategorije
             $table->timestamps();
         });
     }

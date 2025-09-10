@@ -6,7 +6,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubscriptionController;
 
 // Resource rute (REST)
-Route::apiResource('books', BookController::class);
+Route::apiResource('books', BookController::class); //CRUD za knjige
 Route::apiResource('categories', CategoryController::class);
 Route::apiResource('subscriptions', SubscriptionController::class);
 
